@@ -46,11 +46,15 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand">Triple Helix</a>
+        <a class="navbar-brand" href="C:\Users\FRC2363\Documents\GitHub\bootstrap\index.html">Triple Helix</a>
       </div>
       <div class="navbar-collapse collapse" id="navbar">
         <ul class="nav navbar-nav">
-          <li><a>About</a></li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">History</a></li>
+            <li><a href="C:\Users\FRC2363\Documents\GitHub\bootstrap\about_members.html">Current Members</a></li>
+          </ul>
           <li><a>Outreach</a></li>
           <li><a>Blog</a></li>
           <li><a>Contact</a></li>
@@ -112,7 +116,7 @@
   <div class="container">
     <h1>Triple Helix</h1>
     <br>
-    <p>We are Triple Helix, the FIRST robotics team at Menchville High School.</p>
+    <p>We are Triple Helix, the FIRST robotics team at Menchville High School. Interested in STEM, design, videography, marketing, or business? You can do all of these on a FIRST team.</p>
     <br>
     <!-- Rewrite -->
     <!--Welcome to the website of Triple Helix, the Menchville High
@@ -146,13 +150,26 @@
     </div>
   </div>
   <div class="container">
-    <div class="col-sm-7 col-sm-offset-2" style="text-align:center;background:#eeeeee;padding:20px;border-radius:5px;">
-      <i class="material-icons" style="vertical-align:middle;font-size:36px">send</i>
-      <h3>Keep in Touch</h3>
-      <h4>Sign up for our newsletter and receive automatic updates from the team.</h4>
-      <button class="btn btn-lg btn-success" type="button">
-        <span style="position:relative;top:1px">Sign Me Up</span>
+    <div class="col-sm-8 col-sm-offset-2" style="text-align:center;background:#eeeeee;padding:20px;border-radius:5px;">
+      <h2>Keep in Touch</h2>
+      <h4>Sign up for our newsletter to receive automatic updates from the team.</h4>
+      <button type="button" class="btn btn-lg btn-success" data-toggle="modal" data-target=".bs-example-modal-lg">Sign Me Up
+        <i class="material-icons" style="vertical-align:middle;font-size:36px">send</i>
       </button>
+      <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content"></div>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Your username" aria-describedby="basic-addon2">
+              <span class="input-group-addon" id="basic-addon2">@example.com</span>
+            </div>
+          <div>
+            <button type="button" class="btn btn-lg btn-success" data-toggle="modal" data-target=".bs-example-modal-lg">Sign Me Up
+              <i class="material-icons" style="vertical-align:middle;font-size:36px">send</i>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <footer class="container-fluid">
@@ -167,7 +184,7 @@
         <h3>Resources</h3>
         <br>
         <h4 class="whitelink"><a href="">Image Bank</a></h4>
-        <h4 class="whitelink"><a href="">FIRST</a></h4>
+        <h4 class="whitelink"><a href="http://www.firstinspires.org/">FIRST</a></h4>
         <h4 class="whitelink"><a href="">Legal</a></h4>
         <h4 class="whitelink"><a href="http://triplehelix.freeforums.net/">Forum</a></h4>
         <br/>
