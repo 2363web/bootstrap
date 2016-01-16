@@ -36,7 +36,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-default navbar-fixed-top navbar-static-top" role="navigation">
+  <nav class="navbar navbar-default navbar-fixed-top navbar-static-top">
     <div class="container-fluid">
       <div class="navbar-header">
         <button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
@@ -46,14 +46,14 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="C:\Users\FRC2363\Documents\GitHub\bootstrap\index.html">Triple Helix</a>
+        <a class="navbar-brand" href="C:Users\Andres\Documents\GitHub\bootstrap\index.html">Triple Helix</a>
       </div>
       <div class="navbar-collapse collapse" id="navbar">
         <ul class="nav navbar-nav">
           <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">History</a></li>
-            <li><a href="C:\Users\FRC2363\Documents\GitHub\bootstrap\about_members.html">Current Members</a></li>
+            <li><a href="pages/about_history.html">History</a></li>
+            <li><a href="pages/about_members.html">Current Members</a></li>
           </ul>
           <li><a>Outreach</a></li>
           <li><a>Blog</a></li>
@@ -66,8 +66,7 @@
   </nav>
   <div class="carousel slide" data-ride="carousel" id="carousel">
     <ol class="carousel-indicators">
-      <li class="active" data-slide-to="0" data-target="#carousel">
-      </li>
+      <li class="active" data-slide-to="0" data-target="#carousel"></li>
       <li data-slide-to="1" data-target="#carousel"></li>
       <li data-slide-to="2" data-target="#carousel"></li>
     </ol>
@@ -116,7 +115,11 @@
   <div class="container">
     <h1>Triple Helix</h1>
     <br>
-    <p>We are Triple Helix, the FIRST robotics team at Menchville High School. Interested in STEM, design, videography, marketing, or business? You can do all of these on a FIRST team.</p>
+    <p>We are Triple Helix, the Menchville High School FRC Team in Newport News,
+      Virginia. Interested in STEM, design, or marketing? Want to cheer for your
+      team in tournaments? Feeling the need to give back to the community?
+      You'll be able to do all these on a FIRST team. If you are new to FIRST,
+      feel free to check out what we do!</p>
     <br>
     <!-- Rewrite -->
     <!--Welcome to the website of Triple Helix, the Menchville High
@@ -132,7 +135,11 @@
     <div class="col-sm-4" style="text-align:center">
       <i class="material-icons" style="font-size:48px">group</i>
       <h3>Our Team Goal</h3>
-      <p>[Placeholder]</p>
+      <p>We strive to inspire the next generation of innovators, to teach others
+        gracious professionalism, to push ourselves to do our best. We believe
+        that by giving back to the community, we can connect with more people
+        and lead them to do the same. We are dedicated to having as much as a
+        positive impact on the world as possible.</p>
       <!--Rewrite-->
       <!-- We are dedicated to aiding students in their search for a variety of
       competencies, a large number of opportunities gained through the acquisition
@@ -141,12 +148,16 @@
     <div class="col-sm-4" style="text-align:center">
       <i class="material-icons" style="font-size:48px">build</i>
       <h3>Learn Valuable Skills</h3>
-      <p>Participate in an accepting work environment, work with experienced mentor, and teach new members.</p>
+      <p>Ever wanted to use a milling machine or solder? Learn many skills from
+        experienced mentors by participating directly in a comfortable,
+        accepting work environment.</p>
     </div>
     <div class="col-sm-4" style="text-align:center">
       <i class="material-icons" style="font-size:48px">school</i>
       <h3>Gain Unique Experiences</h3>
-      <p>Compete in multilevel competitions, demonstrate the skills developed over the past year, and cheer loudly for the team.</p>
+      <p>Compete in various competitions, from local to international, show
+        new skills while loudly cheering for the team. Meet new
+        friends and influential people from all around the globe.</p>
     </div>
   </div>
   <div class="container">
@@ -156,17 +167,23 @@
       <button type="button" class="btn btn-lg btn-success" data-toggle="modal" data-target=".bs-example-modal-lg">Sign Me Up
         <i class="material-icons" style="vertical-align:middle;font-size:36px">send</i>
       </button>
-      <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content"></div>
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Your username" aria-describedby="basic-addon2">
-              <span class="input-group-addon" id="basic-addon2">@example.com</span>
+      <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" data-spy="affix">
+        $('#myAffix').affix({offset: {top: 100,bottom: function () {return (this.bottom = $('.footer').outerHeight(true))}}})
+        <div class="modal-dialog" role="document">
+          &nbsp;
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Your username" aria-describedby="basic-addon2">
+                <span class="input-group-addon" id="basic-addon2">@example.com</span>
+              </div>
+              &nbsp;
+              <div>
+                <button type="button" class="btn btn-lg btn-success" data-toggle="modal" data-target=".bs-example-modal-lg">Sign Me Up
+                  <i class="material-icons" style="vertical-align:middle;font-size:36px">send</i>
+                </button>
+              </div>
             </div>
-          <div>
-            <button type="button" class="btn btn-lg btn-success" data-toggle="modal" data-target=".bs-example-modal-lg">Sign Me Up
-              <i class="material-icons" style="vertical-align:middle;font-size:36px">send</i>
-            </button>
           </div>
         </div>
       </div>
