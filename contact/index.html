@@ -4,10 +4,8 @@
 <head>
 
 	<script>
-		var host = "2363web.github.io"
-		if (window.location.host == host && window.location.protocol != "https:") {
-			window.location.protocol = "https:"
-		}
+		var host = "2363web.github.io";
+		window.location.host == host && "https:" != window.location.protocol && (window.location.protocol = "https:");
 	</script>
 
 	<meta charset="utf-8">
@@ -22,28 +20,21 @@
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:site" content="@MenchvilleRobot">
 	<meta property="og:title" content="Triple Helix - Contact">
-	<meta property="og:url" content="https://2363web.github.io/bootstrap/contact/">
+	<meta property="og:url" content="http://www.team2363.org/contact/">
 	<meta property="og:description" content="Menchville's FIRST robotics team!">
 	<meta property="og:image" content="helix.png">
 	<meta property="og:image:width" content="256">
 	<meta property="og:image:height" content="256">
 
-	<!-- LINKING -->
 
 	<link rel="apple-touch-icon" href="../images/helix.png">
-	<link rel="canonical" href="https://2363web.github.io/bootstrap/contact/">
+	<link rel="canonical" href="http://www.team2363.org/contact/">
 	<link rel="icon" href="../images/helix.png">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="../bootstrap.min.css" rel="stylesheet">
 	<link href="../extras.min.css" rel="stylesheet">
 	<title>Triple Helix - Contact</title>
-	<style>
-	#map {
-		width: 500px;
-		height: 400px;
-	}
-	</style>
 </head>
 
 <body>
@@ -68,11 +59,13 @@
 							<li><a href="../sponsors">Sponsors</a></li>
 							<li><a href="../branding">Branding</a></li>
 						</ul>
-						<li><a href="../outreach">Outreach</a></li>
-						<li><a href=".">Contact</a></li>
-						<li><a href="http://www.firstinspires.org">FIRST</a></li>
-						<li><a href="../games">Games</a></li>
 					</li>
+					<li><a href="../outreach">Outreach</a></li>
+					<li class="active"><a href=".">Contact</a></li>
+					<li><a href="../games">Games</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="http://www.firstinspires.org">FIRST</a></li>
 				</ul>
 			</div>
 		</div>
@@ -86,15 +79,17 @@
 			<div class="col-sm-6">
 				<div class="row">
 					<h1 class="col-xs-12">Message Us</h1>
-					<form action="mailto:samuel.e.tyler@gmail.com" class="col-xs-12">
+					<form action="natelaverdure@gmail.com" class="col-xs-12">
 						<p>Send an email to our head mentor, Nate Laverdure.</p>
 						<textarea class="form-control" rows="10"></textarea>
 						<br/>
-						<p><button type="submit" class="btn btn-default">Send</button></p>
+						<p>
+							<button type="submit" class="btn btn-default">Send</button>
+						</p>
 					</form>
 				</div>
 				<br/>
-				<h1>Our Mailing List</h1>
+				<h1>Mailing List</h1>
 				<form class="text-left">
 					<div class="form-group">
 						<div class="row text-center">
@@ -108,44 +103,42 @@
 					</div>
 				</form>
 			</div>
-		<div class="col-sm-6">
-			<div class="row">
-				<div class="col-sm-12">
-					<h3>Our Location</h3>
-					<a href="https://www.google.com/maps/dir//37.0958073,-76.5307237/@37.0888305,-76.5359935,13z/data=!4m2!4m1!3e0" class="large-images"><img src="../images/map.png" class="img-rounded" alt="map"></a>
-					<p>275 Menchville Rd, Newport News, VA 23602</p>
+			<div class="col-sm-6">
+				<div class="row">
+					<div class="col-sm-12">
+						<h1>Our Location</h1>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12729.535288706747!2d-76.5305072!3d37.09598!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe80060c806dcd93d!2sMenchville+High+School!5e0!3m2!1sen!2sus!4v1456078960082" width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
-<footer class="flexible-container container-fluid">
-	<div class="row">
-		<div class="col-xs-12">
-			<ul class="media-list">
-				<li>
-					<h3><a href="https://www.facebook.com/people/Triple-Helix/100008807926634/">Facebook</a></h3></li>
-				<li>
-					<h3><a href="https://github.com/2363web/">GitHub</a></h3></li>
-				<li>
-					<h3><a href="https://plus.google.com/101177615024702170297/">Google+</a></h3></li>
-				<li>
-					<h3><a href="https://www.instagram.com/triplehelix2363/">Instagram</a></h3></li>
-				<li>
-					<h3><a href="https://twitter.com/MenchvilleRobot/">Twitter</a></h3></li>
-				<li>
-					<h3><a href="https://www.youtube.com/user/TripleHelix2363/">YouTube</a></h3>
-				</li>
-			</ul>
+	<footer class="flexible-container container-fluid">
+		<div class="row">
+			<div class="col-xs-6 col-sm-2">
+				<h3><a href="https://www.facebook.com/people/Triple-Helix/100008807926634/">Facebook</a></h3>
+			</div>
+			<div class="col-xs-6 col-sm-2">
+				<h3><a href="https://github.com/2363web/">GitHub</a></h3>
+			</div>
+			<div class="col-xs-6 col-sm-2">
+				<h3><a href="https://plus.google.com/101177615024702170297/">Google+</a></h3>
+			</div>
+			<div class="col-xs-6 col-sm-2">
+				<h3><a href="https://www.instagram.com/triplehelix2363/">Instagram</a></h3>
+			</div>
+			<div class="col-xs-6 col-sm-2">
+				<h3><a href="https://twitter.com/MenchvilleRobot/">Twitter</a></h3>
+			</div>
+			<div class="col-xs-6 col-sm-2">
+				<h3><a href="https://www.youtube.com/user/TripleHelix2363/">YouTube</a></h3>
+			</div>
 		</div>
-	</div>
-</footer>
-
-	<!-- SCRIPTS -->
+	</footer>
 
 	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 </body>
 

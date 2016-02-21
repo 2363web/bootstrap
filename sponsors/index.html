@@ -3,12 +3,7 @@
 
 <head>
 
-  <script>
-    var host = "2363web.github.io"
-    if (window.location.host == host && window.location.protocol != "https:") {
-      window.location.protocol = "https:"
-    }
-  </script>
+<script>var host="2363web.github.io";window.location.host==host&&"https:"!=window.location.protocol&&(window.location.protocol="https:");</script>
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,16 +17,15 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@MenchvilleRobot">
   <meta property="og:title" content="Triple Helix - Sponsors">
-  <meta property="og:url" content="https://2363web.github.io/bootstrap/sponsors/">
+  <meta property="og:url" content="http://www.team2363.org/sponsors/">
   <meta property="og:description" content="Placeholder">
   <meta property="og:image" content="../images/helix.png">
   <meta property="og:image:width" content="256">
   <meta property="og:image:height" content="256">
 
-  <!-- LINKING -->
 
   <link rel="apple-touch-icon" href="../images/helix.png">
-  <link rel="canonical" href="https://2363web.github.io/bootstrap/sponsors/">
+  <link rel="canonical" href="http://www.team2363.org/sponsors/">
   <link rel="icon" href="../images/helix.png">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -59,14 +53,16 @@
 						<ul class="dropdown-menu">
 							<li><a href="../history">History</a></li>
 							<li><a href="../members">Members</a></li>
-							<li><a href=".">Sponsors</a></li>
+							<li class="active"><a href=".">Sponsors</a></li>
 							<li><a href="../branding">Branding</a></li>
-						</ul>
-						<li><a href="../outreach">Outreach</a></li>
-						<li><a href="../contact">Contact</a></li>
-						<li><a href="http://www.firstinspires.org">FIRST</a></li>
-						<li><a href="../games">Games</a></li>
+            </ul>
 					</li>
+					<li class="active"><a href="../outreach">Outreach</a></li>
+					<li><a href="../contact">Contact</a></li>
+					<li><a href="../games">Games</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="http://www.firstinspires.org">FIRST</a></li>
 				</ul>
       </div>
     </div>
@@ -77,10 +73,11 @@
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-sm-3 col-lg-2 side-rsp-nav text-left">
+      <div class="col-sm-3 col-lg-2 text-left">
         <h3>Navigation</h3>
         <p>Select a rank to see all of the sponsors within it.</p>
-        <ul class="nav">
+        <div class="row">
+        <ul class="nav nav-pills col-lg-1">
           <li class="active"><a href="#platinum" data-toggle="tab">Platinum</a></li>
           <li><a href="#gold" data-toggle="tab">Gold</a></li>
           <li><a href="#silver" data-toggle="tab">Silver</a></li>
@@ -88,6 +85,7 @@
           <li><a href="#copper" data-toggle="tab">Copper</a></li>
         </ul>
       </div>
+    </div>
       <div class="col-sm-9 col-lg-10 col-xs-12">
         <div class="tab-content">
           <div id="platinum" class="tab-pane fade in out active row">
@@ -106,8 +104,6 @@
             </div>
           </div>
 
-          <!--  GOLD  -->
-
           <div id="gold" class="tab-pane fade in out row">
             <h1 class="col-xs-12"> Gold Sponsors</h1>
             <div class="col-xs-4 col-xs-offset-2">
@@ -124,8 +120,6 @@
             </div>
           </div>
 
-
-          <!--  SILVER -->
           <div id="silver" class="tab-pane fade in out row">
             <h1 class="col-xs-12"> Silver Sponsors</h1>
             <div class="col-xs-4 col-xs-offset-2">
@@ -154,7 +148,6 @@
             </div>
           </div>
 
-          <!--  BRONZE  -->
           <div id="bronze" class="tab-pane fade in out row">
             <h1 class="col-xs-12"> Bronze Sponsors</h1>
             <div class="col-xs-4 col-xs-offset-2">
@@ -170,7 +163,6 @@
             </div>
           </div>
 
-          <!--  COPPER  -->
           <div id="copper" class="tab-pane fade in out row">
             <div class="col-xs-12">
               <h1>Copper Sponsors</h1>
@@ -185,31 +177,31 @@
   </div>
 
   <footer class="flexible-container container-fluid">
-    <div class="row">
-      <div class="col-xs-12">
-        <ul class="media-list">
-          <li>
-            <h3><a href="https://www.facebook.com/people/Triple-Helix/100008807926634/">Facebook</a></h3></li>
-          <li>
-            <h3><a href="https://github.com/2363web/">GitHub</a></h3></li>
-          <li>
-            <h3><a href="https://plus.google.com/101177615024702170297/">Google+</a></h3></li>
-          <li>
-            <h3><a href="https://www.instagram.com/triplehelix2363/">Instagram</a></h3></li>
-          <li>
-            <h3><a href="https://twitter.com/MenchvilleRobot/">Twitter</a></h3></li>
-          <li>
-            <h3><a href="https://www.youtube.com/user/TripleHelix2363/">YouTube</a></h3>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </footer>
+  		<div class="row">
+  			<div class="col-xs-6 col-sm-2">
+  				<h3><a href="https://www.facebook.com/people/Triple-Helix/100008807926634/">Facebook</a></h3>
+  			</div>
+  			<div class="col-xs-6 col-sm-2">
+  				<h3><a href="https://github.com/2363web/">GitHub</a></h3>
+  			</div>
+  			<div class="col-xs-6 col-sm-2">
+  				<h3><a href="https://plus.google.com/101177615024702170297/">Google+</a></h3>
+  			</div>
+  			<div class="col-xs-6 col-sm-2">
+  				<h3><a href="https://www.instagram.com/triplehelix2363/">Instagram</a></h3>
+  			</div>
+  			<div class="col-xs-6 col-sm-2">
+  				<h3><a href="https://twitter.com/MenchvilleRobot/">Twitter</a></h3>
+  			</div>
+  			<div class="col-xs-6 col-sm-2">
+  				<h3><a href="https://www.youtube.com/user/TripleHelix2363/">YouTube</a></h3>
+  			</div>
+  		</div>
+  	</footer>
 
-  <!-- SCRIPTS -->
 
   <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>
 
 </html>

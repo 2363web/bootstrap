@@ -7,6 +7,7 @@ install:
 script:
   - "bootlint branding/index.html"
   - "bootlint contact/index.html"
+  - "bootlint games/index.html"
   - "bootlint history/index.html"
   - "bootlint members/index.html"
   - "bootlint outreach/index.html"

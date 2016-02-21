@@ -3,12 +3,7 @@
 
 <head>
 
-  <script>
-    var host = "2363web.github.io"
-    if (window.location.host == host && window.location.protocol != "https:") {
-      window.location.protocol = "https:"
-    }
-  </script>
+<script>var host="2363web.github.io";window.location.host==host&&"https:"!=window.location.protocol&&(window.location.protocol="https:");</script>
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,16 +17,15 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@MenchvilleRobot">
   <meta property="og:title" content="Triple Helix - History">
-  <meta property="og:url" content="https://2363web.github.io/bootstrap/history/">
+  <meta property="og:url" content="http://www.team2363.org/history/">
   <meta property="og:description" content="Menchville's FIRST robotics team!">
   <meta property="og:image" content="../images/helix.png">
   <meta property="og:image:width" content="256">
   <meta property="og:image:height" content="256">
 
-  <!-- LINKING -->
 
   <link rel="apple-touch-icon" href="../images/helix.png">
-  <link rel="canonical" href="https://2363web.github.io/bootstrap/history/">
+  <link rel="canonical" href="http://www.team2363.org/history/">
   <link rel="icon" href="../images/helix.png">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -57,16 +51,18 @@
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href=".">History</a></li>
+							<li class="active"><a href=".">History</a></li>
 							<li><a href="../members">Members</a></li>
 							<li><a href="../sponsors">Sponsors</a></li>
 							<li><a href="../branding">Branding</a></li>
-						</ul>
-						<li><a href="../outreach">Outreach</a></li>
-						<li><a href="../contact">Contact</a></li>
-						<li><a href="http://www.firstinspires.org">FIRST</a></li>
-						<li><a href="../games">Games</a></li>
+            </ul>
 					</li>
+					<li><a href="../outreach">Outreach</a></li>
+					<li><a href="../contact">Contact</a></li>
+					<li><a href="../games">Games</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="http://www.firstinspires.org">FIRST</a></li>
 				</ul>
       </div>
     </div>
@@ -186,34 +182,33 @@
   </div>
 
 
-  <!-- FOOTER -->
 
   <footer class="flexible-container container-fluid">
 		<div class="row">
-			<div class="col-xs-12">
-				<ul class="media-list">
-					<li>
-						<h3><a href="https://www.facebook.com/people/Triple-Helix/100008807926634/">Facebook</a></h3></li>
-					<li>
-						<h3><a href="https://github.com/2363web/">GitHub</a></h3></li>
-					<li>
-						<h3><a href="https://plus.google.com/101177615024702170297/">Google+</a></h3></li>
-					<li>
-						<h3><a href="https://www.instagram.com/triplehelix2363/">Instagram</a></h3></li>
-					<li>
-						<h3><a href="https://twitter.com/MenchvilleRobot/">Twitter</a></h3></li>
-					<li>
-						<h3><a href="https://www.youtube.com/user/TripleHelix2363/">YouTube</a></h3>
-					</li>
-				</ul>
+			<div class="col-xs-6 col-sm-2">
+				<h3><a href="https://www.facebook.com/people/Triple-Helix/100008807926634/">Facebook</a></h3>
+			</div>
+			<div class="col-xs-6 col-sm-2">
+				<h3><a href="https://github.com/2363web/">GitHub</a></h3>
+			</div>
+			<div class="col-xs-6 col-sm-2">
+				<h3><a href="https://plus.google.com/101177615024702170297/">Google+</a></h3>
+			</div>
+			<div class="col-xs-6 col-sm-2">
+				<h3><a href="https://www.instagram.com/triplehelix2363/">Instagram</a></h3>
+			</div>
+			<div class="col-xs-6 col-sm-2">
+				<h3><a href="https://twitter.com/MenchvilleRobot/">Twitter</a></h3>
+			</div>
+			<div class="col-xs-6 col-sm-2">
+				<h3><a href="https://www.youtube.com/user/TripleHelix2363/">YouTube</a></h3>
 			</div>
 		</div>
 	</footer>
 
-  <!-- SCRIPTS -->
 
   <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 </body>
 
