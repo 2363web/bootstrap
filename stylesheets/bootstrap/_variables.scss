@@ -32,7 +32,7 @@ $body-bg:               #fff !default;
 $text-color:            $gray-dark !default;
 
 //** Global textual link color.
-$link-color:            $brand-primary !default;
+$link-color:            darken(#7e57c2, 10%) !default;
 //** Link hover color set via `darken()` function.
 $link-hover-color:      darken($link-color, 15%) !default;
 //** Link hover decoration.
@@ -255,7 +255,7 @@ $dropdown-link-hover-bg:         #f5f5f5 !default;
 //** Active dropdown menu item text color.
 $dropdown-link-active-color:     $component-active-color !default;
 //** Active dropdown menu item background color.
-$dropdown-link-active-bg:        $component-active-bg !default;
+$dropdown-link-active-bg:        lighten(#7e57c2, 5%) !default;
 
 //** Disabled dropdown menu item background color.
 $dropdown-link-disabled-color:   $gray-light !default;
@@ -384,13 +384,13 @@ $navbar-default-link-disabled-bg:          transparent !default;
 
 // Navbar brand label
 $navbar-default-brand-color:               $navbar-default-link-color !default;
-$navbar-default-brand-hover-color:         darken($navbar-default-brand-color, 10%) !default;
+$navbar-default-brand-hover-color:         #ffe6b6 !default;
 $navbar-default-brand-hover-bg:            transparent !default;
 
 // Navbar toggle
-$navbar-default-toggle-hover-bg:           #ddd !default;
-$navbar-default-toggle-icon-bar-bg:        #888 !default;
-$navbar-default-toggle-border-color:       #ddd !default;
+$navbar-default-toggle-hover-bg:           #e59b0c !default;
+$navbar-default-toggle-icon-bar-bg:        #fff !default;
+$navbar-default-toggle-border-color:       #ffad0e !default;
 
 
 //=== Inverted navbar
@@ -444,7 +444,7 @@ $nav-tabs-justified-active-link-border-color:     $body-bg !default;
 
 //== Pills
 $nav-pills-border-radius:                   $border-radius-base !default;
-$nav-pills-active-link-hover-bg:            $component-active-bg !default;
+$nav-pills-active-link-hover-bg:            lighten(#7e57c2, 10%) !default;
 $nav-pills-active-link-hover-color:         $component-active-color !default;
 
 
