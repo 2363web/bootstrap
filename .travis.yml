@@ -1,7 +1,7 @@
 sudo: false
 language: node_js
 node_js:
- - "5.8.0"
+ - "6"
 install:
  - "npm install bootlint"
 script:
@@ -19,4 +19,3 @@ notifications:
 branches:
   only:
     - gh-pages
-    - /^branch-.*$/
