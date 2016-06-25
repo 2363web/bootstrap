@@ -4,15 +4,17 @@ The new look of Team 2363, in active development.
 
 # Development
 
-To change the core Bootstrap CSS of this repo, you will need to go through some setup.
+Here's how you can hack around the code of this repository. Make sure you have [Node.js](https://nodejs.org)  and [Gulp](http://gulpjs.com) installed.
 
-- Install [Node.js](https://nodejs.org)
-- Install Gulp: `npm install -g gulp`
-- 
+- Initial setup: `npm install`
+- Compile SCSS into CSS: `gulp sass`
+- Watch for SCSS changes: `gulp watch`
+- Run Bootlint: `gulp lint`
 
 # Libraries used
+- [Bootstrap](https://getbootstrap.com)
 - [Plyr](https://plyr.io)
 - [Parallax.js](https://pixelcog.github.io/parallax.js/)
 
-Please read [CONTRIBUTING.md](https://github.com/2363web/bootstrap/blob/gh-pages/.github/CONTRIBUTING.md) before submitting an [Issue](https://github.com/2363web/bootstrap/issues) or [Pull request](https://github.com/2363web/bootstrap/pulls).
+Be sure to read [CONTRIBUTING.md](https://github.com/2363web/bootstrap/blob/gh-pages/.github/CONTRIBUTING.md) before submitting an [Issue](https://github.com/2363web/bootstrap/issues) or [Pull request](https://github.com/2363web/bootstrap/pulls).
 
