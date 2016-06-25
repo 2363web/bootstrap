@@ -1,19 +1,11 @@
-sudo: false
 language: node_js
 node_js:
  - "6"
 install:
- - "npm install bootlint"
+ - "npm install -g gulp"
+ - "npm install"
 script:
-  - "bootlint branding/index.html"
-  - "bootlint contact/index.html"
-  - "bootlint games/index.html"
-  - "bootlint history/index.html"
-  - "bootlint members/index.html"
-  - "bootlint outreach/index.html"
-  - "bootlint sponsors/index.html"
-  - "bootlint 404.html"
-  - "bootlint index.html"
+  - "gulp lint"
 notifications:
   email: false
 branches:
