@@ -1,4 +1,3 @@
-
 var gulp = require('gulp');
 var bootlint  = require('gulp-bootlint');
 var cleanCSS = require('gulp-clean-css');
