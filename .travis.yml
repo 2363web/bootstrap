@@ -1,13 +1,12 @@
 language: node_js
 node_js:
  - "6"
+rvm:
+ - "2.3"
 install:
- - "npm install -g gulp"
  - "npm install"
+ - "gem install scss_lint"
 script:
-  - "gulp lint"
+  - "npm run build"
 notifications:
   email: false
-branches:
-  only:
-    - gh-pages

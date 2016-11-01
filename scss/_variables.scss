@@ -1,24 +1,24 @@
-$gray-base:              #000 !default;
-$gray-light:             lighten($gray-base, 46.7%) !default;
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
 
-$brand-primary:                    #7e57c2 !default;
-$brand-warning:                    #fdb813 !default;
+$brand-primary: #7e57c2 !default;
+$brand-warning: #fdb813 !default;
 
-$jumbotron-color:                  #fff !default;
-$jumbotron-bg:                     #7e57c2 !default;
+$navbar-default-color: #fff !default;
+$navbar-default-bg: #fdb813 !default;
 
-$navbar-default-color:             #fff !default;
-$navbar-default-bg:                #fdb813 !default;
+$navbar-default-link-color: $navbar-default-color !default;
+$navbar-default-link-hover-color: lighten($navbar-default-bg, 25%) !default;
+$navbar-default-link-active-color: $navbar-default-link-hover-color !default;
+$navbar-default-link-active-bg: darken($navbar-default-bg, 10%) !default;
 
-$navbar-default-link-color:                 $navbar-default-color !default;
-$navbar-default-link-hover-color:           lighten($navbar-default-bg, 25%) !default;
-$navbar-default-link-active-color:          $navbar-default-link-hover-color !default;
-$navbar-default-link-active-bg:             darken($navbar-default-bg, 10%) !default;
+$navbar-default-brand-color: $navbar-default-link-color !default;
+$navbar-default-brand-hover-color: lighten($navbar-default-bg, 25%) !default;
+$navbar-default-brand-hover-bg: transparent !default;
 
-$navbar-default-brand-color:               $navbar-default-link-color !default;
-$navbar-default-brand-hover-color:         lighten($navbar-default-bg, 25%) !default;
-$navbar-default-brand-hover-bg:            transparent !default;
+$navbar-default-toggle-hover-bg: darken($navbar-default-bg, 10%) !default;
+$navbar-default-toggle-icon-bar-bg: $navbar-default-color !default;
+$navbar-default-toggle-border-color: $navbar-default-bg !default;
 
-$navbar-default-toggle-hover-bg:            darken($navbar-default-bg, 10%) !default;
-$navbar-default-toggle-icon-bar-bg:         $navbar-default-color !default;
-$navbar-default-toggle-border-color:        $navbar-default-bg !default;
+.parallax-window {
+    min-height: 35em;
+}

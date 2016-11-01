@@ -8,12 +8,16 @@
   "bugs": {
     "url": "https://github.com/2363web/bootstrap/issues"
   },
+  "scripts": {
+    "build": "npm run sass && npm run min",
+    "min": "node-sass --output-style compressed --source-map true scss/bootstrap.scss dist/bootstrap.min.css",
+    "sass": "node-sass --output-style expanded --source-map true scss/bootstrap.scss -o dist",
+    "watch": "node-sass -w scss/bootstrap.scss -o dist"
+  },
   "dependencies": {
-    "bootstrap-sass": "^3.3.6",
-    "gulp": "^3.9.1",
-    "gulp-bootlint": "^0.8.0",
-    "gulp-clean-css": "^2.0.8",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.1"
+    "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {
+    "node-sass": "^3.10.1"
   }
 }
