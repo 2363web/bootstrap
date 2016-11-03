@@ -3,21 +3,26 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/2363web/bootstrap.git"
+    "url": "git+https://github.com/2363web/website.git"
   },
   "bugs": {
-    "url": "https://github.com/2363web/bootstrap/issues"
+    "url": "https://github.com/2363web/website/issues"
   },
   "scripts": {
     "build": "npm run sass && npm run min",
     "min": "node-sass --output-style compressed --source-map true scss/bootstrap.scss dist/bootstrap.min.css",
     "sass": "node-sass --output-style expanded --source-map true scss/bootstrap.scss -o dist",
+    "serve": "ws . --port 2363",
     "watch": "node-sass -w scss/bootstrap.scss -o dist"
   },
   "dependencies": {
-    "bootstrap": "^3.3.7"
+    "bootstrap-sass": "^3.3.7",
+    "lightbox2": "^2.8.2"
   },
   "devDependencies": {
-    "node-sass": "^3.10.1"
+    "local-web-server": "^1.2.6",
+    "node-sass": "^3.10.1",
+    "pace-progress": "^1.0.2",
+    "turbolinks": "^5.0.0"
   }
 }

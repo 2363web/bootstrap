@@ -4,8 +4,8 @@ node_js:
 rvm:
  - "2.3"
 install:
- - "npm install"
  - "gem install scss_lint"
+ - "npm install"
 script:
   - "npm run build"
 notifications:

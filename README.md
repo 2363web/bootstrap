@@ -1,6 +1,8 @@
-# Triple Helix website [![Build Status](https://travis-ci.org/2363web/bootstrap.svg?branch=gh-pages)](https://travis-ci.org/2363web/bootstrap)
+# Triple Helix website
 
-The new look of Team 2363, in active development.
+[![Build Status](https://travis-ci.org/2363web/website.svg?branch=gh-pages)](https://travis-ci.org/2363web/website)
+
+The new Team 2363 website, in active development.
 
 # Development
 
@@ -13,7 +15,8 @@ Here's how you can hack around the code of this repository. Make sure you have [
 
 # Libraries used
 - [Bootstrap](https://getbootstrap.com)
+- [jQuery](https://jquery.com)
+- [Lightbox2](http://lokeshdhakar.com/projects/lightbox2/)
 - [Parallax.js](https://pixelcog.github.io/parallax.js/)
 
 Be sure to read [CONTRIBUTING.md](https://github.com/2363web/bootstrap/blob/gh-pages/.github/CONTRIBUTING.md) before submitting an [Issue](https://github.com/2363web/bootstrap/issues) or [Pull request](https://github.com/2363web/bootstrap/pulls).
-
